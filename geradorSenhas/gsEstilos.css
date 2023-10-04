@@ -10,10 +10,7 @@ body {
 main {
     display: grid;
     grid-template:
-    "logo header"200px
-    "nav nav"100px
-    "layout layout"300px
-    / 300px 1fr;
+        "logo header"200px "nav nav"100px "layout layout"300px / 300px 1fr;
 }
 
 .logo {
@@ -65,26 +62,28 @@ button:active {
 .layout {
     grid-area: layout;
     background-color: white;
-    width: 500px;
-    height: 400px;
+    width: 450px;
+    height: 350px;
     justify-self: center;
     border-radius: 5px;
     margin-top: 70px;
     border: 2px solid gray;
 }
 
-.layout h1{
+.layout h1 {
     grid-area: titulo;
     text-align: center;
 }
 
 .layout .container-botoes {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente*/
-} 
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente*/
+}
 
-.container-botoes > *:last-child {
+.container-botoes>*:last-child {
     margin-left: 10px;
 }
 
@@ -124,14 +123,18 @@ button:active {
     background-color: rgb(230, 230, 230);
 }
 
-#mensagem{
+#mensagem {
     width: auto;
     height: auto;
     text-align: center;
-    color:white;
+    color: white;
     background-color: green;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    font-weight: 600;
+    margin-top: 30px;
+    -webkit-animation-name: example;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s;
+    /* Chrome, Safari, Opera */
     animation-name: example;
     animation-duration: 4s;
 }
