@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gerador Senhas - Casa do Papel</title>
         <link rel="stylesheet" href="/geradorSenhas/gsEstilos.css">
+        <script src="/geradorSenhas/gsScripts.js"></script>
     </head>
     <body>
         <main>
@@ -25,18 +26,18 @@
             <div class="layout">
                 <h1>Gerador de Senhas</h1>
                 <div class="container-botoes">
-                    <button class="btn-1">Gerar Senha</button>
-                    <button class="btn-2">Limpar Senha</button>
+                    <button class="btn-1" onclick="gerarSenha()">Gerar Senha</button>
+                    <button class="btn-2" onclick="limparSenha()">Limpar Senha</button>
                 </div>
                 <div class="container-senha">
-                    <h2>Senha Gerada</h2>
+                    <h2 id="resultado">Senha Gerada</h2>
                 </div>
                 <div class="container-botoes">
-                    <button class="btn-3">Copiar Senha</button>
+                    <button id="btnCopiarSenha" class="btn-3" onclick="copiarSenha()">Copiar Senha</button>
                 </div>
                 <!--Criação da Div com conteúdo em branco para a exibição da mensagem quando a senha for copiada-->
                 <div id="mensagem">
-                    <p>     </p>
+                    <p></p>
                 </div>
             </div>
         </main>

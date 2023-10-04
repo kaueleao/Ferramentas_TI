@@ -10,9 +10,7 @@ body {
 main {
     display: grid;
     grid-template:
-    "logo header"200px
-    "nav nav"100px
-    / 300px 1fr;
+        "logo header"200px "nav nav"100px / 300px 1fr;
 }
 
 .logo {
