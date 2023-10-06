@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gerador QR Code - Casa do Papel</title>
-        <link rel="stylesheet" href="/geradorQrcode/gqrEstilos.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <img class="logo" src="/imagens/logo.jpg" alt="logo">
-            </header>
-            <div class="titulo">
-                <h1>Gerador QR Code - Casa do Papel</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador QR Code - Casa do Papel</title>
+    <link rel="stylesheet" href="/geradorQrcode/gqrEstilos.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="logo" src="/imagens/logo.jpg" alt="logo">
+        </header>
+        <div class="titulo">
+            <h1>Gerador QR Code - Casa do Papel</h1>
+        </div>
+        <nav>
+            <a href="/index.html" target="_self" style="text-decoration: none;">
+                <button>Home</button>
+            </a>
+            <a href="/geradorSenhas/gsIndex.html" target="_self" style="text-decoration: none;">
+                <button>Gerador Senhas</button>
+            </a>
+        </nav>
+        <div class="layout">
+            <h1>Informe o ID ou Patrimônio</h1>
+            <div class="input">
+                <input type="number" id="informacaoId" class="input-patrimonio-id"
+                    placeholder="Digite o Patrimônio ou ID">
             </div>
-            <nav>
-                <a href="/index.html" target="_self" style="text-decoration: none;">
-                    <button>Home</button>
-                </a>
-                <a href="/geradorSenhas/gsIndex.html" target="_self" style="text-decoration: none;">
-                    <button>Gerador Senhas</button>
-                </a>
-            </nav>
-        </main>
-    </body>
+
+            <div class="container-botoes">
+                <button class="btn-1" onclick="gerarSenha()">Gerar QR Code</button>
+                <button class="btn-2" onclick="limparSenha()">Limpar QR Code</button>
+            </div>
+            <div class="qrcode-area" id="area-qrcode">
+                <img id="imagemQrcode">
+            </div>
+
+            <div class="container-botoes">
+                <button id="btnCopiarSenha" class="btn-4" onclick="copiarSenha()">Imprimir QR Code</button>
+            </div>
+        </div>
+    </main>
 </body>
+</body>
+
 </html>
