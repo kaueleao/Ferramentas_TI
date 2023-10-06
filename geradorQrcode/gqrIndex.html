@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador QR Code - Casa do Papel</title>
     <link rel="stylesheet" href="/geradorQrcode/gqrEstilos.css">
+    <script src="/geradorQrcode/gqrScripts.js"></script>
 </head>
 
 <body>
@@ -32,15 +33,15 @@
             </div>
 
             <div class="container-botoes">
-                <button class="btn-1" onclick="gerarSenha()">Gerar QR Code</button>
-                <button class="btn-2" onclick="limparSenha()">Limpar QR Code</button>
+                <button class="btn-1" onclick="gerarQrcode()">Gerar QR Code</button>
+                <button class="btn-2" onclick="limparQrcode()">Limpar QR Code</button>
             </div>
             <div class="qrcode-area" id="area-qrcode">
                 <img id="imagemQrcode">
             </div>
 
             <div class="container-botoes">
-                <button id="btnCopiarSenha" class="btn-4" onclick="copiarSenha()">Imprimir QR Code</button>
+                <button id="btnCopiarSenha" class="btn-4" onclick="imprimirQrcode()">Imprimir QR Code</button>
             </div>
         </div>
     </main>
